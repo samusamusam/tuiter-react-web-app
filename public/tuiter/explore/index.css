@@ -1,0 +1,250 @@
+.wd-searchbox {
+    height: 20%;
+    width: 90%;
+    position:relative;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.wd-searchtab {
+    padding-left: 14px;
+}
+
+.wd-searchtext { 
+    border-radius: 20px;
+    background-color: #E5E4E2;
+    width: 90%;
+    border: none;
+    height: 35px;
+    padding-left: 80px;
+    left: 45px;
+}
+
+.fa-search {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    padding-left: 14px;
+    margin: 8px 10px 10px 10px;
+    z-index: 1;
+}
+
+.fas.fa-cog {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    padding-left: 92%;
+    margin-top: -42px;
+    z-index: 1;
+}
+
+.wd-tabbox {
+    width:90%;
+    height:50px;
+    align-items: center;
+    position: relative;
+}
+
+.wd-tab{
+    float:left;
+    width:20%;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    color: gray;
+}
+
+.wd-underlinetab {
+    display: inline-block;
+    position: relative;
+}
+  
+.wd-underlinetab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.wd-selectedtab{
+    float:left;
+    width:20%;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.wd-picturebox {
+    width:90%;
+    height:300px;
+    position:relative;
+}
+
+.wd-picture {
+    width:100%;
+    height:100%;
+    opacity: 0.75;
+    position:absolute;
+}
+
+.wd-pictureevent {
+    position: absolute;
+    color: white;
+    bottom:12%;
+    left: 15px;
+}
+
+.wd-picturelive {
+    position: absolute;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    bottom:12%;
+    left: 65px;
+}
+
+.wd-pictureheadline {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    bottom:2%;
+    left: 15px;
+}
+
+.fas.fa-circle {
+    position: absolute;
+    font-size:5px;
+    bottom:14%;
+    left: 55px;
+}
+
+.wd-trendingbox {
+    width:90%;
+    position: relative;
+}
+
+.wd-trendinglist {
+    width: 100%;
+    position: relative;
+    left: -30px;
+}
+
+.wd-trendingindividualbox {
+    width:100%;
+    height:10%;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.wd-trendingtitle {
+    font-size: 14px;
+    position: relative;
+    color: gray;
+}
+
+.wd-trendingsubject {
+    font-size: 18px;
+    position: relative;
+}
+
+.wd-trendingtuits {
+    font-size: 14px;
+    position: relative;
+    color: gray;
+}
+
+.fas.fa-ellipsis-h {
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    right: 34px;
+}
+
+ul#wd-nodots {
+    list-style: none;
+}
+
+.wd-profilepicsize {
+    height: 48px;
+    width: 48px;
+}
+
+.wd-smallfont {
+    font-size: 14px;
+}
+
+.wd-boldfont {
+    font-weight:bold;
+}
+
+.wd-margintop {
+    margin-top: 5px;
+}
+
+.wd-absolutepos {
+    position:absolute;
+}
+
+.wd-relativepos {
+    position: relative;
+}
+
+.wd-searchicon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.wd-settingsicon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.wd-imagetext {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.wd-widthninety {
+    width:90%;
+}
+
+.wd-textleftsmall {
+    padding-left:40px;
+}
+
+.wd-tuitpicsize {
+    height: 60px;
+    width: 60px;
+}
+
+.wd-gray {
+    color: lightgray;
+}
+
+.wd-xsfont {
+    font-size: 13px;
+}
+
+.wd-centerrow {
+    justify-content: center;
+}
