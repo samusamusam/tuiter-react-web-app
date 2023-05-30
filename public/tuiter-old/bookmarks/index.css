@@ -1,0 +1,152 @@
+.wd-topbarbox{
+    position:relative;
+    width:100%;
+    height: 50px;
+}
+
+.fas.fa-arrow-left {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.wd-title {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.wd-tuitbox {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    border:dotted;
+}
+
+.wd-tuitheader {
+    position:relative;
+    width: 100%;    
+    padding:14px;
+    padding-bottom:25px;
+}
+
+.wd-smallbold{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.wd-smallgray{
+    font-size: 14px;
+    color: lightslategray;
+}
+
+.fas.fa-circle {
+    font-size:3px;
+    color: lightslategray;
+    vertical-align:middle;
+}
+
+.wd-blue {
+    color: blue;
+}
+
+.wd-red {
+    color: red;
+}
+
+.wd-roundicon {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.wd-smallfont{
+    font-size: 14px;
+}
+
+.wd-tuitbody {
+    position:relative;
+    width: 85%;
+    height: 100%;
+    padding: 0px;
+    border: solid;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+
+.wd-tuitprofilepic {
+    float:left;
+    width: 50px;
+}
+
+.wd-tuitimage {
+    position:relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+    border: none;
+}
+
+.fas.fa-ellipsis-h {
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    right: 34px;
+}
+
+.wd-moveleft {
+    padding-right: 30px;
+}
+
+.wd-tuitlink {
+    position:relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wd-tuitdesc {
+    position:relative;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.wd-tuittitle {
+    position:relative;
+    width: 100%;
+    padding-top:0px;
+    padding-left: 10px;
+}
+
+.wd-tuiticons {
+    position:relative;
+    width: 85%;
+    height: 20px;
+    padding: 0px;
+    padding-top: 10px;
+    margin-left: 60px;
+    padding-bottom: 5px;
+}
+
+.wd-smallleftpadding {
+    padding-left: 3px;
+}
+
+.wd-tuiticonsfloat {
+    float:left;
+    width:20%;
+}
+
+.wd-lightgray {
+    color: lightslategray;
+}
+
+.wd-lightgrayborder {
+    border: solid;
+    border-color: rgb(148, 168, 187);
+}
