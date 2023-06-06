@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import NewTodoItemRedux from "./new-todo-item-redux";
 import TodoItemRedux from "./todo-item-redux";
 import { updateTodo, setTodos, deleteTodo } from "./todos-reducer";
-
+ 
 function TodoList() {
   const { newTodoTitle, todos, loading, error } = useSelector(
     (state) => state.todos
