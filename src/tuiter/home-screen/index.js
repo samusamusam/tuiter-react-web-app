@@ -1,7 +1,13 @@
+import React from "react";
+import TuitsList from "../tuits/index";
+import WhatsHappening from "../whats-happening";
+
 function HomeScreen() {
   return (
     <div>
-      <h1>Home Screen</h1>
+      <h4>Home</h4>
+      <WhatsHappening />
+      <TuitsList />
     </div>
   );
 }

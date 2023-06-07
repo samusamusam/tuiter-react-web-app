@@ -2,7 +2,12 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
-  const [ignore, tuiter, active] = pathname.split("/");
+  let [ignore, tuiter, active] = pathname.split("/");
+
+  if(!active) {
+    active = "home";
+  }
+
   const links = [
     "home",
     "explore",

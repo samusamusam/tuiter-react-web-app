@@ -8,6 +8,8 @@ import Assignment4 from "./labs/a4";
 import Routing from "./labs/a3/routing";
 import Navigation from "./nav";
 import HelloWorld from "./labs/a3/hello-world";
+import Todos from "./todos";
+import TodosRedux from "./todos-redux";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <div className="container">
         <Navigation />
         <Routes>
+          <Route path="/todos-redux/*" element={<TodosRedux />} />
+          <Route path="/todos/*" element={<Todos />} />
           <Route path="/" element={<Navigate to="/labs/" />} />
           <Route path="/labs/*" element={<Labs />} />
           <Route path="/hello" element={<HelloWorld />} />
