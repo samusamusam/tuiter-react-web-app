@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import { deleteTuitThunk } from "../services/tuits-thunks";
 import TuitStats from "./tuit-stats";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const TuitItem = ({ tuit, tuits }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
   return (
     <li className="list-group-item">
@@ -27,7 +27,7 @@ const TuitItem = ({ tuit, tuits }) => {
               className="fas fa-times float-end"
               onClick={() => deleteTuitHandler(tuit._id)}
             ></i>
-            <span className="bold-font me-2">{tuit.userName}</span>
+            <span className="bold-font me-2">{tuit.username}</span>
             <i className="fas fa-check-circle text-primary me-2"></i>
             <span className="me-2">{tuit.handle}</span>
             <i className="fas fa-circle smaller-font me-2"></i>
