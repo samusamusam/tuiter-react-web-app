@@ -3,7 +3,8 @@ import { useDispatch } from "react-redux";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { removeLike, addLike } from "../reducers/tuits-reducer";
+import { updateTuitThunk } from "../services/tuits-thunks";
+// import { removeLike, addLike } from "../reducers/tuits-reducer";
 
 const TuitStats = ({ tuit, tuits }) => {
   const dispatch = useDispatch();
@@ -24,7 +25,7 @@ const TuitStats = ({ tuit, tuits }) => {
           <div className="col-2 me-4">
             <button
               onClick={() => {
-                dispatch(addLike({ ...tuit, liked: tuit.liked }));
+                dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: true }))
               }}
               className="btn"
             >
@@ -38,7 +39,7 @@ const TuitStats = ({ tuit, tuits }) => {
           <div className="col-2 me-4">
             <button
               onClick={() => {
-                dispatch(removeLike({ ...tuit, liked: tuit.liked }));
+                dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1, liked: false }))
               }}
               className="btn"
             >

@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import { createTuit } from "./reducers/tuits-reducer";
+import { createTuitThunk } from "./services/tuits-thunks";
 import { useDispatch } from "react-redux";
-import { AiOutlinePicture } from 'react-icons/ai';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
-import { MdGif, MdFormatListBulleted } from 'react-icons/md';
-import { BsEmojiSmile } from 'react-icons/bs';
-import { TbCalendarStats} from 'react-icons/tb';
-import { BiBold, BiItalic} from 'react-icons/bi'; 
+import { AiOutlinePicture } from "react-icons/ai";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { MdGif, MdFormatListBulleted } from "react-icons/md";
+import { BsEmojiSmile } from "react-icons/bs";
+import { TbCalendarStats } from "react-icons/tb";
+import { BiBold, BiItalic } from "react-icons/bi";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
-        tuit: whatsHappening
-    }
-    dispatch(createTuit(newTuit));
+      tuit: whatsHappening,
+    };
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
   };
   return (
