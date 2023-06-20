@@ -34,7 +34,7 @@ const TuitItem = ({ tuit, tuits }) => {
             <span>{tuit.time}</span>
           </div>
           <div>
-            <span>{tuit.tuit}</span>
+            <span>{tuit.tuits}</span>
           </div>
         </div>
       </div>
