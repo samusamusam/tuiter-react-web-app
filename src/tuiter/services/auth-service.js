@@ -1,6 +1,6 @@
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_SERVER_API_URL;
-//const USERS_API = `${API_BASE}/users`; 
+const API_BASE = "https://tuiter-node-server-app-ubch.onrender.com/api";
+// const USERS_API = `${API_BASE}/users`; 
 const USERS_API = `http://localhost:4000/api/users`;
 
 const api = axios.create({ withCredentials: true });

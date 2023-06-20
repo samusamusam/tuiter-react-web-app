@@ -1,5 +1,7 @@
 import axios from "axios";
-const TUITS_API = `http://localhost:4000/api/tuits`;;
+const API_BASE = "https://tuiter-node-server-app-ubch.onrender.com/api";
+// const TUITS_API = `${API_BASE}/tuits`; 
+const TUITS_API = `http://localhost:4000/api/tuits`;
  
 export const createTuit = async (tuit) => {
   const response = await axios.post(TUITS_API, tuit);
